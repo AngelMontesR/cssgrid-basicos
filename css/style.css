@@ -56,3 +56,10 @@ h1, h2 {
     font-size: 4rem;
     margin-bottom: 2rem;
 }
+
+/* Grid 1 */
+
+.grid-1 {
+    display: grid;
+}
+
