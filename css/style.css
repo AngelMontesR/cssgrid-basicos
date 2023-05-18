@@ -130,3 +130,17 @@ h1, h2 {
 .grid-7 .box:nth-child(1) {
     background-color: rgb(136, 136, 192);
 }
+
+/* Grid 8 */
+
+.grid-8 {
+    display: grid;
+    grid: repeat(2, 20rem) / repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.grid-8 .box {
+    margin: 0;
+}
+
