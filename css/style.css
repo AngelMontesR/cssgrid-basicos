@@ -106,3 +106,17 @@ h1, h2 {
     display: grid;
     grid: repeat(2, 300px) / repeat(3, 300px);
 }
+
+/* Grid 6 */
+
+.grid-6 {
+    display: grid;
+    grid: repeat(2, 300px) / repeat(3, 300px);
+    grid-auto-flow: dense;
+}
+
+.grid-6 .box:nth-child(2) {
+    background-color: rgb(136, 136, 192);
+    grid-column: 1/2; 
+}
+
