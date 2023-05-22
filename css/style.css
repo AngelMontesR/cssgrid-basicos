@@ -239,3 +239,13 @@ h1, h2 {
     height: 30rem;
     align-items: center;
 }
+
+/* Grid 12 */
+
+.grid-12 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 20rem); /* auto-fit llena las columnas hasta ocupar todo el espacio */ 
+    grid-template-columns: repeat(auto-fit, 20rem); /* auto-fit llena las columnas hasta solo el contenido  no acepta fr*/
+
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); /* auto-fit llena las columnas y hace modo responsive */
+}
