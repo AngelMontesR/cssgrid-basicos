@@ -144,3 +144,46 @@ h1, h2 {
     margin: 0;
 }
 
+/* Grid 9 */
+
+.grid-9 {
+    display: grid;
+    height: 120rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "content content sidebar"
+        "footer footer footer";
+    grid-template-rows: 2.5fr 1fr 8fr 2.5fr;
+    gap: 2rem;
+}
+
+.grid-9 .box {
+    margin: 0;
+}
+
+.grid-9 .box:nth-child(1){
+    grid-area: header;
+    background-color: rgb(136, 136, 192);
+}
+
+.grid-9 .box:nth-child(2){
+    grid-area: nav;
+    background-color: rgb(216, 216, 216);
+}
+
+.grid-9 .box:nth-child(3){
+    grid-area: content;
+    background-color: rgb(136, 136, 192);
+}
+
+.grid-9 .box:nth-child(4){
+    grid-area: sidebar;
+    background-color: rgb(216, 216, 216);
+}
+
+.grid-9 .box:nth-child(5){
+    grid-area: footer;
+    background-color: rgb(136, 136, 192);
+}
